@@ -1721,7 +1721,7 @@ footer::before {
 /* Premium Donut Chart */
 
 .chart-wrapper {
-  max-width: 420px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 2.5rem;
   aspect-ratio: 1 / 1; 
