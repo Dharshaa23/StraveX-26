@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Automation — StraveX '26</title>
+  <meta name="description" content="Smart Automation track problem statements for StraveX '26 hackathon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
+
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">StraveX '26</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#tracks" class="active">Tracks</a></li>
+      <li><a href="index.html#timeline">Timeline</a></li>
+      <li><a href="index.html#rules">Rules</a></li>
+      <li><a href="index.html#prizes">Prizes</a></li>
+      <li><a href="index.html#register" class="nav-cta">Register</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html#about" class="mobile-link">About</a>
+    <a href="index.html#tracks" class="mobile-link">Tracks</a>
+    <a href="index.html#timeline" class="mobile-link">Timeline</a>
+    <a href="index.html#rules" class="mobile-link">Rules</a>
+    <a href="index.html#prizes" class="mobile-link">Prizes</a>
+    <a href="index.html#register" class="nav-cta mobile-link">Register Now</a>
+  </nav>
+
+  <!-- Track Hero -->
+  <section class="track-hero track-hero--purple" id="track-hero">
+    <div class="track-hero-bg" aria-hidden="true"></div>
+    <div class="container">
+      <a href="index.html#tracks" class="track-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Back to All Tracks
+      </a>
+      <div class="track-hero-content">
+        <div class="track-number-badge">Track 03</div>
+        <h1 class="track-hero-title">Smart Automation</h1>
+        <p class="track-hero-subtitle">Designing AI-driven, sensor-based, and data-intelligent systems that automate real-world processes to improve safety, efficiency, and decision-making.</p>
+        <div class="track-meta-row">
+          <div class="track-meta-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            10 Problem Statements
+          </div>
+          <div class="track-meta-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            Max 5 Members
+          </div>
+          <div class="track-meta-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            18 March 2026
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Statements -->
+  <section class="ps-section">
+    <div class="container">
+      <div class="ps-header fade-up">
+        <span class="section-label">Problem Statements</span>
+        <h2 class="section-title">Choose Your Challenge</h2>
+        <p class="section-subtitle">Select any one problem statement from below. Build intelligent automation systems that solve real, high-impact challenges.</p>
+      </div>
+      <div class="ps-grid">
+
+        <div class="ps-card fade-up delay-1">
+          <div class="ps-card-header">
+            <div class="ps-number">01</div>
+            <div class="ps-tag">Computer Vision / Safety</div>
+          </div>
+          <h3 class="ps-title">Automated Construction Site Safety Monitor</h3>
+          <p class="ps-body">Construction sites face frequent safety violations. Workers often ignore helmets and safety protocols, and supervisors cannot manually monitor all zones simultaneously. This leads to accidents and regulatory penalties.</p>
+          <div class="ps-problem-statement">
+            <div class="ps-ps-label">Problem Statement</div>
+            Build a computer vision system to detect safety gear compliance on construction sites and send real-time alerts to supervisors when violations are detected.
+          </div>
+        </div>
+        <div class="ps-card fade-up delay-2">
+          <div class="ps-card-header">
+            <div class="ps-number">02</div>
+            <div class="ps-tag">AI / Career Guidance</div>
+          </div>
+          <h3 class="ps-title">AI-Based Smart Job Role Recommendation System</h3>
+          <p class="ps-body">Students are confused about suitable career paths and lack personalized career guidance. Generic advice does not account for individual skills, academic performance, or personal interests.</p>
+          <div class="ps-problem-statement">
+            <div class="ps-ps-label">Problem Statement</div>
+            Build an AI model that analyzes skills, interests, and academic records to recommend optimal job roles and career development paths for students.
+          </div>
+        </div>
+        <div class="ps-card fade-up delay-3">
+          <div class="ps-card-header">
+            <div class="ps-number">03</div>
+            <div class="ps-tag">IoT / Disaster Management</div>
+          </div>
+          <h3 class="ps-title">Automated Smart Street Flood Detection System</h3>
+          <p class="ps-body">Urban flooding disrupts traffic and public safety. Authorities receive delayed information about waterlogging, making emergency response inefficient and reactive rather than proactive.</p>
+          <div class="ps-problem-statement">
+            <div class="ps-ps-label">Problem Statement</div>
+            Design a water-level sensor network that sends real-time flood alerts and predicts risk zones using historical data to enable proactive disaster management.
+          </div>
+        </div>
+        <div class="ps-card fade-up delay-1">
+          <div class="ps-card-header">
+            <div class="ps-number">04</div>
+            <div class="ps-tag">AI / Traffic</div>
+          </div>
+          <h3 class="ps-title">Smart Dynamic Traffic Signal Control System</h3>
+          <p class="ps-body">Traditional traffic signals operate on fixed timers and do not adapt to real-time traffic conditions. This leads to congestion on busy roads while adjacent lanes remain empty and underutilized.</p>
+          <div class="ps-problem-statement">
+            <div class="ps-ps-label">Problem Statement</div>
+            Design an intelligent traffic signal system that dynamically adjusts signal timing based on real-time vehicle density at intersections to reduce congestion and wait times.
+          </div>
+        </div>
+        <div class="ps-card fade-up delay-2">
+          <div class="ps-card-header">
+            <div class="ps-number">05</div>
+            <div class="ps-tag">IoT / Energy</div>
+          </div>
+          <h3 class="ps-title">Smart Appliance-Level Energy Monitoring System</h3>
+          <p class="ps-body">Energy wastage in homes and institutions increases electricity bills and carbon emissions. Users lack awareness of real-time appliance-level power consumption, making it hard to identify and eliminate waste.</p>
+          <div class="ps-problem-statement">
+            <div class="ps-ps-label">Problem Statement</div>
+            Build a system that monitors appliance-level electricity usage in real time and provides actionable energy-saving suggestions to users through a dashboard or mobile app.
+          </div>
+        </div>
+        <div class="ps-card fade-up delay-3">
+          <div class="ps-card-header">
+            <div class="ps-number">06</div>
+            <div class="ps-tag">Hardware / Security</div>
+          </div>
+          <h3 class="ps-title">Intelligent Electric Fence Tamper Detection System</h3>
+          <p class="ps-body">Electric fences used in agricultural lands, wildlife reserves, and restricted areas lack intelligent monitoring. Unauthorized tampering goes undetected, compromising security, safety, and livestock protection.</p>
+          <div class="ps-problem-statement">
+            <div class="ps-ps-label">Problem Statement</div>
+            Design a hardware-based intelligent system that can detect, prevent, and report unauthorized use or tampering of electric fences in real time by integrating monitoring, authentication, and alert mechanisms.
+          </div>
+        </div>
+        <div class="ps-card fade-up delay-1">
+          <div class="ps-card-header">
+            <div class="ps-number">07</div>
+            <div class="ps-tag">AI / GIS / Safety</div>
+          </div>
+          <h3 class="ps-title">Smart Disaster Evacuation Assistant</h3>
+          <p class="ps-body">During disasters, people panic and lack real-time evacuation guidance. Existing alert systems do not provide personalized, location-aware safe-route navigation to individuals caught in affected zones.</p>
+          <div class="ps-problem-statement">
+            <div class="ps-ps-label">Problem Statement</div>
+            Develop a mobile app integrated with GIS data to suggest real-time safe evacuation routes using AI, considering current disaster zones, population density, and road conditions.
+          </div>
+        </div>
+        <div class="ps-card fade-up delay-2">
+          <div class="ps-card-header">
+            <div class="ps-number">08</div>
+            <div class="ps-tag">RFID / Healthcare</div>
+          </div>
+          <h3 class="ps-title">Smart Pharmacy Inventory Expiry Manager</h3>
+          <p class="ps-body">Expired medicines cause financial loss and serious health risks. Manual tracking of expiry dates is error-prone, especially in pharmacies managing thousands of SKUs across multiple batches.</p>
+          <div class="ps-problem-statement">
+            <div class="ps-ps-label">Problem Statement</div>
+            Develop a barcode/RFID-based inventory system for pharmacies that sends automated alerts before medicine expiry and suggests stock rotation strategies to minimize waste.
+          </div>
+        </div>
+        <div class="ps-card fade-up delay-3">
+          <div class="ps-card-header">
+            <div class="ps-number">09</div>
+            <div class="ps-tag">AI / CCTV / Security</div>
+          </div>
+          <h3 class="ps-title">Smart Facial Recognition CCTV Security System</h3>
+          <p class="ps-body">Traditional CCTV systems cannot differentiate between family members and strangers, leading to ineffective monitoring and delayed intrusion response in residential and commercial spaces.</p>
+          <div class="ps-problem-statement">
+            <div class="ps-ps-label">Problem Statement</div>
+            Build an AI-powered CCTV system with facial recognition that identifies authorized individuals and sends instant alerts when an unknown person is detected inside or near the premises.
+          </div>
+        </div>
+        <div class="ps-card fade-up delay-1">
+          <div class="ps-card-header">
+            <div class="ps-number">10</div>
+            <div class="ps-tag">IoT / AI / Predictive Maintenance</div>
+          </div>
+          <h3 class="ps-title">IoT-Enabled Vocational Lab Equipment Monitor</h3>
+          <p class="ps-body">Vocational training labs rely on machinery for hands-on education but face challenges including improper equipment usage, delayed maintenance, unexpected breakdowns, and poor utilization tracking — leading to safety risks and reduced training quality.</p>
+          <div class="ps-problem-statement">
+            <div class="ps-ps-label">Problem Statement</div>
+            Design a scalable IoT &amp; AI-enabled monitoring system that tracks equipment usage in real time, detects faults and unsafe conditions, enables predictive maintenance, and provides actionable dashboards for trainers and administrators in vocational training labs.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ps-section" style="padding-top:0;padding-bottom:5rem;">
+    <div class="container">
+      <div class="ps-cta fade-up">
+        <div class="ps-cta-inner">
+          <h3>Ready to solve this challenge?</h3>
+          <p>Register your team and select this track during sign-up. No registration fee required.</p>
+          <a href="index.html#register" class="btn btn-primary">
+            Register Now
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="other-tracks-section">
+    <div class="container">
+      <span class="section-label fade-up">Explore More</span>
+      <h2 class="section-title fade-up delay-1">Other Tracks</h2>
+      <div class="other-tracks-grid fade-up delay-2">
+        <a href="campus.html" class="other-track-card">
+          <div class="otc-num">01</div>
+          <div class="otc-info"><div class="otc-title">Campus Micro-Systems</div><div class="otc-count">10 Problems</div></div>
+          <svg class="otc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="renewable.html" class="other-track-card">
+          <div class="otc-num">02</div>
+          <div class="otc-info"><div class="otc-title">Resource Efficiency &amp; Micro Sustainability</div><div class="otc-count">10 Problems</div></div>
+          <svg class="otc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="education.html" class="other-track-card">
+          <div class="otc-num">04</div>
+          <div class="otc-info"><div class="otc-title">Smart Education</div><div class="otc-count">10 Problems</div></div>
+          <svg class="otc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="inclusive.html" class="other-track-card">
+          <div class="otc-num">05</div>
+          <div class="otc-info"><div class="otc-title">Inclusive &amp; Accessible Systems</div><div class="otc-count">10 Problems</div></div>
+          <svg class="otc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">StraveX '26</div>
+          <div class="dept">Department of Artificial Intelligence and Data Science</div>
+          <div class="tagline">Invisible Problems. Intelligent Solutions.</div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#tracks">Tracks</a></li>
+            <li><a href="index.html#timeline">Timeline</a></li>
+            <li><a href="index.html#prizes">Prizes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Tracks</h4>
+          <ul>
+            <li><a href="campus.html">Campus Micro-Systems</a></li>
+            <li><a href="renewable.html">Resource Efficiency</a></li>
+            <li><a href="automation.html">Smart Automation</a></li>
+            <li><a href="education.html">Smart Education</a></li>
+            <li><a href="inclusive.html">Inclusive Systems</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 StraveX — Department of Artificial Intelligence and Data Science</p>
+        <div class="email"><a href="mailto:contact@stravex26.example.com">contact@stravex26.example.com</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
