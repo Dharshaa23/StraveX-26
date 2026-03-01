@@ -1740,3 +1740,27 @@ footer::before {
   width: 100% !important;
   height: 100% !important;
 }
+
+
+@media (max-width: 768px) {
+
+  #hero {
+    padding: 0 1.2rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 10vw, 3.2rem);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    word-break: break-word;
+  }
+
+  .hero-content {
+    padding: 2rem 1rem;
+  }
+
+  .hero-highlights {
+    gap: 0.6rem;
+  }
+
+}
