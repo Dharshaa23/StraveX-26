@@ -1721,9 +1721,10 @@ footer::before {
 /* Premium Donut Chart */
 
 .chart-wrapper {
-  max-width: 600px;
+  max-width: 420px;
   margin: 0 auto;
   padding: 2.5rem;
+  aspect-ratio: 1 / 1; 
   background: linear-gradient(
     145deg,
     rgba(255,255,255,0.02),
@@ -1733,4 +1734,9 @@ footer::before {
   border-radius: 24px;
   backdrop-filter: blur(14px);
   box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.chart-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
 }
