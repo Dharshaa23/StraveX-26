@@ -1768,7 +1768,7 @@ footer::before {
   animation: heroIn 0.7s ease forwards 0.1s;
 }
 .hero-college-logo {
-  width: 200px;        /* increase size if you want */
+  width: 150px;        /* increase size if you want */
   height: auto;
   object-fit: contain;
   background: none;    /* remove background */
