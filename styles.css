@@ -446,27 +446,24 @@ section { padding: 6rem 0; position: relative; }
   filter: brightness(1.08);
 }
 .btn-secondary {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid var(--border);
-  color: var(--muted);
-  backdrop-filter: blur(8px);
+  background: linear-gradient(135deg, var(--accent), var(--indigo));
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(59,130,246,0.3);
 }
 .btn-secondary:hover {
-  background: rgba(255,255,255,0.09);
-  border-color: rgba(255,255,255,0.15);
-  color: var(--text);
   transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(59,130,246,0.45);
+  filter: brightness(1.08);
 }
 .btn-outline {
-  background: transparent;
-  border: 1px solid rgba(124,58,237,0.4);
-  color: var(--purple-light);
+  background: linear-gradient(135deg, var(--accent), var(--indigo));
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(59,130,246,0.3);
 }
 .btn-outline:hover {
-  background: rgba(124,58,237,0.1);
-  border-color: var(--purple-light);
   transform: translateY(-2px);
-  box-shadow: 0 0 20px var(--purple-glow);
+  box-shadow: 0 8px 32px rgba(59,130,246,0.45);
+  filter: brightness(1.08);
 }
 
 .hero-scroll-hint {
