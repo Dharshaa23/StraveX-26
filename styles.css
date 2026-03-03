@@ -1785,7 +1785,7 @@ footer::before {
 
 /* ─── Hero: organizer line ────────────────────── */
 .hero-organizer {
-  font-size: clamp(0.78rem, 1.8vw, 0.92rem);
+  font-size: clamp(0.78rem, 2vw, 0.92rem);
   font-weight: 500;
   color: var(--muted);
   letter-spacing: 0.02em;
