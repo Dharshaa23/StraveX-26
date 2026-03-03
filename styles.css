@@ -277,11 +277,11 @@ section { padding: 6rem 0; position: relative; }
 #hero {
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;   /* 👈 change this */
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 0;
+  padding-top: 120px; 
 }
 
 /* Radial gradient glow layers */
