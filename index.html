@@ -561,83 +561,37 @@
 
         <!-- Right: form -->
         <div class="fade-up delay-2">
-          <form id="registrationForm" action="/register" method="POST" novalidate>
-            <div class="reg-form-card">
-
-              <div class="form-section-title">Team Information</div>
-              <div class="form-group" id="grp-team_name">
-                <label for="team_name">Team Name <span class="req">*</span></label>
-                <input type="text" id="team_name" name="team_name" class="form-control" placeholder="e.g. Project Phoenix" required autocomplete="off" />
-                <span class="field-error" id="err-team_name">Team name is required.</span>
-              </div>
-              <div class="form-row">
-                <div class="form-group" id="grp-track">
-                  <label for="track">Problem Track <span class="req">*</span></label>
-                  <select id="track" name="track" class="form-control" required>
-                    <option value="" disabled selected>Select a track</option>
-                    <option value="campus-micro-systems">Campus Micro-Systems</option>
-                    <option value="resource-efficiency">Resource Efficiency &amp; Micro Sustainability</option>
-                    <option value="smart-automation">Smart Automation</option>
-                    <option value="smart-education">Smart Education</option>
-                    <option value="inclusive-accessible">Inclusive &amp; Accessible Systems</option>
-                  </select>
-                  <span class="field-error" id="err-track">Please select a track.</span>
-                </div>
-                <div class="form-group" id="grp-team_size">
-                  <label for="team_size">Team Size <span class="req">*</span></label>
-                  <input type="number" id="team_size" name="team_size" class="form-control" placeholder="1–5" min="1" max="5" required />
-                  <span class="field-error" id="err-team_size">Enter a valid team size (1–5).</span>
-                </div>
-              </div>
-
-              <div class="form-section-title">Team Lead Details</div>
-              <div class="form-group" id="grp-lead_name">
-                <label for="lead_name">Lead Name <span class="req">*</span></label>
-                <input type="text" id="lead_name" name="lead_name" class="form-control" placeholder="Full name" required autocomplete="name" />
-                <span class="field-error" id="err-lead_name">Lead name is required.</span>
-              </div>
-              <div class="form-row">
-                <div class="form-group" id="grp-lead_email">
-                  <label for="lead_email">Lead Email <span class="req">*</span></label>
-                  <input type="email" id="lead_email" name="lead_email" class="form-control" placeholder="email@example.com" required autocomplete="email" />
-                  <span class="field-error" id="err-lead_email">Enter a valid email address.</span>
-                </div>
-                <div class="form-group" id="grp-lead_phone">
-                  <label for="lead_phone">Lead Phone <span class="req">*</span></label>
-                  <input type="tel" id="lead_phone" name="lead_phone" class="form-control" placeholder="10-digit number" required autocomplete="tel" maxlength="10" inputmode="numeric" />
-                  <span class="field-error" id="err-lead_phone">Enter a valid 10-digit phone number.</span>
-                </div>
-              </div>
-
-              <div class="form-section-title">
-                Additional Team Members
-                <span class="form-section-sub">(max 4)</span>
-              </div>
-              <div class="members-container" id="membersContainer"></div>
-              <button type="button" class="btn-add-member" id="addMemberBtn">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
-                Add Team Member
-              </button>
-              <span class="field-error" id="err-members" style="margin-top:0.5rem;"></span>
-
-              <button type="submit" class="btn-submit" id="submitBtn">
-                <span id="submitText">Register Team →</span>
-                <span id="submitLoading" style="display:none;">Registering…</span>
-              </button>
-            </div>
-          </form>
-
-          <div id="successCard">
+          <div id="successCard" style="display:block;">
             <div class="success-icon">✓</div>
-            <h3 class="success-title">Registration Submitted!</h3>
-            <p class="success-msg">Your team details have been received. Please complete the ₹200 payment to confirm your registration. A confirmation will be sent to the team lead's email.</p>
-            <div class="team-id-badge" id="teamIdDisplay">—</div>
-            <div class="team-id-label">Your Team ID</div>
-            <p class="success-note">Keep this ID safe — you'll need it on hackathon day.</p>
-            <a href="#" class="payment-link-btn payment-link-btn--success">Complete Payment →</a>
+        
+            <h3 class="success-title">Register via Google Form</h3>
+        
+            <p class="success-msg">
+              We’ve moved registrations to Google Forms for a smoother experience.
+              Click below to fill in your team details and complete payment.
+            </p>
+        
+            <div class="team-id-badge">
+              STRX26
+            </div>
+        
+            <div class="team-id-label">
+              Complete both steps to confirm registration
+            </div>
+        
+            <p class="success-note">
+              Step 1: Pay ₹200 per team using the link on the left. <br>
+              Step 2: Fill the official Google Registration Form.
+            </p>
+        
+            <a href="YOUR_GOOGLE_FORM_LINK_HERE"
+               target="_blank"
+               class="payment-link-btn payment-link-btn--success">
+              Fill Registration Form →
+            </a>
+        
           </div>
         </div>
-
       </div>
     </div>
   </section>
