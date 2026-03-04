@@ -577,7 +577,7 @@
 })();
 
 
-const scriptURL = "PASTE_YOUR_WEB_APP_URL_HERE";
+const scriptURL = "https://script.google.com/macros/s/AKfycbxQkBp5hTfyk26jh7A5TRtBRLjQudrPo4VohR6BGDC5c1rwrO-q5NQF_XrvzGtiWDwWZQ/exec";
 
 document.getElementById("registrationForm").addEventListener("submit", function(e) {
   e.preventDefault();
