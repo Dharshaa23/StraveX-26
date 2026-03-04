@@ -575,3 +575,33 @@
     });
   });
 })();
+
+
+const scriptURL = "PASTE_YOUR_WEB_APP_URL_HERE";
+
+document.getElementById("registrationForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const formData = {
+    teamName: document.getElementById("teamName").value,
+    leaderName: document.getElementById("leaderName").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    department: document.getElementById("department").value,
+    year: document.getElementById("year").value
+  };
+
+  fetch(scriptURL, {
+    method: "POST",
+    body: JSON.stringify(formData)
+  })
+  .then(response => response.json())
+  .then(data => {
+    alert("Registration Successful!");
+    document.getElementById("registrationForm").reset();
+  })
+  .catch(error => {
+    alert("Error submitting form");
+    console.error(error);
+  });
+});
