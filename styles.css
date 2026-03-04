@@ -2087,16 +2087,14 @@ footer::before {
   transform: translateX(3px);
 }
 .payment-link-btn--success {
-  display: inline-flex;
-  margin-top: 1rem;
-  background: rgba(59,130,246,0.1);
-  border-color: rgba(59,130,246,0.3);
-  color: var(--accent);
+  background: linear-gradient(135deg, var(--accent), var(--indigo));
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(59,130,246,0.3);
 }
 .payment-link-btn--success:hover {
-  background: rgba(59,130,246,0.2);
-  border-color: var(--accent);
-  transform: translateX(3px);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(59,130,246,0.45);
+  filter: brightness(1.08);
 }
 
 
